@@ -1,0 +1,18 @@
+.blogItem {
+  box-shadow: 2px 2px 4px grey;
+  border-radius: 5px;
+  height: 100%;
+  overflow: hidden;
+  transform: scale(0.95);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blogItem:hover {
+  box-shadow: 2px 2px 16px;
+  position: relative;
+  transform: scale(1);
+}
+
+.content {
+  padding: 1rem;
+}

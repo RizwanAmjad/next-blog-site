@@ -1,0 +1,21 @@
+.nav {
+  align-items: center;
+  background-color: #7380ec;
+  color: #fefefe;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navItems {
+  display: flex;
+}
+
+.navItem {
+  padding: 1rem 2rem;
+  transition: color 0.4s;
+}
+
+.navItem:hover {
+  color: #000000;
+}

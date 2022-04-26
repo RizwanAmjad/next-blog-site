@@ -1,0 +1,10 @@
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+@media only screen and (max-width: 600px) {
+  .blogGrid {
+    grid-template-columns: auto;
+  }
+}
