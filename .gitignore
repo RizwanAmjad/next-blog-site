@@ -32,5 +32,10 @@ yarn-error.log*
 .vercel
 
 /blogs/*
+!/blogs/.gitkeep
+
 /public/images/blogs/*
+!/public/images/blogs/.gitkeep
+
 /public/images/site/*
+!/public/images/site/.gitkeep
