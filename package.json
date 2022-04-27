@@ -9,14 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "mongoose": "^6.3.0",
     "multiparty": "^4.2.3",
     "next": "12.1.5",
     "next-connect": "^0.12.2",
     "normalize.css": "^8.0.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-markdown": "^8.0.2"
+    "react-markdown": "^8.0.2",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.5"
   },
   "devDependencies": {
     "eslint": "8.13.0",

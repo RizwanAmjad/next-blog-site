@@ -2,10 +2,7 @@ import nc from "next-connect";
 import fs from "fs";
 
 import fileUpload from "../../middleware/fileUpload";
-import dbConnect from "../../lib/dbConnect";
 import Blog from "../../models/blogs";
-
-dbConnect();
 
 const handler = nc({
   onError: (err, req, res, next) => {
@@ -20,7 +17,7 @@ const handler = nc({
 handler.use(fileUpload);
 
 handler.post(async (req, res) => {
-  const blog = new Blog(req.body);
+  const blog = Blog.build(req.body);
   try {
     // moving content markdown file
     fs.renameSync(req.files.content[0].path, `blogs/${req.body.slug}.md`);

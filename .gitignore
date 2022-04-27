@@ -39,3 +39,5 @@ yarn-error.log*
 
 /public/images/site/*
 !/public/images/site/.gitkeep
+
+database.sqlite
