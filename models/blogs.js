@@ -22,7 +22,6 @@ const Blog =
   });
 
 (async () => {
-  console.log("sequelize");
   await sequelize.createSchema();
   await sequelize.sync();
 })();
