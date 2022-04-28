@@ -25,8 +25,6 @@ handler.post(async (req, res) => {
     const pathToBlogImageDirectory = `blog-images/${req.body.slug}`;
     fs.mkdirSync(pathToBlogImageDirectory);
 
-    console.log(req.files);
-
     req.files.images.map((image) => {
       fs.renameSync(
         image.path,

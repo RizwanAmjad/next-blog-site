@@ -38,5 +38,3 @@ blog-images/*
 !blog-images/.gitkeep
 
 
-
-database.sqlite
