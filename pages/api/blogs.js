@@ -22,8 +22,10 @@ handler.post(async (req, res) => {
     // moving content markdown file
     fs.renameSync(req.files.content[0].path, `blogs/${req.body.slug}.md`);
     // moving other images
-    const pathToBlogImageDirectory = `public/images/blogs/${req.body.slug}`;
+    const pathToBlogImageDirectory = `blog-images/${req.body.slug}`;
     fs.mkdirSync(pathToBlogImageDirectory);
+
+    console.log(req.files);
 
     req.files.images.map((image) => {
       fs.renameSync(

@@ -13,7 +13,7 @@ export default function IndividualBlogPage({ blog, content }) {
       <BlogDetailComponent
         content={content}
         title={blog.title}
-        image={`/images/blogs/${blog.slug}/${blog.image}`}
+        image={`/api/blog-images/${blog.slug}/${blog.image}`}
         slug={blog.slug}
       />
     </>

@@ -11,7 +11,7 @@ function BlogItemComponent({ title, description, image, date, slug }) {
         <div className={styles.blogItem}>
           <div className={styles.image}>
             <Image
-              src={`/images/blogs/${slug}/${image}`}
+              src={`/api/blog-images/${slug}/${image}`}
               width={100}
               height={100}
               layout="responsive"

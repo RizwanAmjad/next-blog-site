@@ -7,13 +7,9 @@ function BlogHeaderComponent({ title, image }) {
   return (
     <header>
       <h1 className={styles.title}>{title}</h1>
-      <Image
-        src={image}
-        width={200}
-        height={150}
-        className={styles.image}
-        layout="responsive"
-      />
+      <div className={styles.image}>
+        <Image src={image} width={200} height={150} layout="responsive" />
+      </div>
     </header>
   );
 }

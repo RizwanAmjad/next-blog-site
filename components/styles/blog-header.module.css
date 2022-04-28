@@ -3,8 +3,9 @@
 }
 
 .image {
-  height: auto;
-  width: 80%;
+  border-radius: 20px;
+  height: 250px;
+  overflow: hidden;
 }
 
 .image img {

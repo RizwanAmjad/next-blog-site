@@ -1,8 +1,10 @@
 import { Sequelize, DataTypes } from "sequelize";
 
+const dbURI = process.env.DB_URI ? "database.sqlite" : process.env.DB_URI;
+
 const sequelize = new Sequelize({
   dialect: "sqlite",
-  storage: "database.sqlite",
+  storage: dbURI,
 });
 
 const Blog =
