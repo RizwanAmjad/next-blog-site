@@ -1,11 +1,6 @@
 import { Sequelize, DataTypes } from "sequelize";
 
-const dbURI = "database.sqlite";
-
-const sequelize = new Sequelize({
-  dialect: "sqlite",
-  storage: dbURI,
-});
+const sequelize = new Sequelize("sqlite::memory:");
 
 const Blog =
   sequelize.models.Blogs ||
