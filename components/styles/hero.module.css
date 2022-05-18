@@ -8,7 +8,7 @@
   justify-content: center;
   margin-bottom: 2rem;
   padding: 1rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
   transition: clip-path 1s;
 }
 
@@ -19,5 +19,4 @@
 .image img {
   border-radius: 50%;
   object-fit: cover;
-  width: 20%;
 }

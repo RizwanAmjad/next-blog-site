@@ -10,10 +10,8 @@ function BlogItemComponent({ title, description, image, date, slug }) {
       <a>
         <div className={styles.blogItem}>
           <div className={styles.image}>
-            <Image
+            <img
               src={`/api/blog-images/${slug}/${image}`}
-              width={100}
-              height={100}
               layout="responsive"
             />
           </div>

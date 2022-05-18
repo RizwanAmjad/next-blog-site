@@ -13,6 +13,12 @@
   transform: scale(1);
 }
 
+.image img {
+  height: 18rem;
+  object-fit: cover;
+  width: 100%;
+}
+
 .content {
   padding: 1rem;
 }

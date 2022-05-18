@@ -10,12 +10,13 @@ function HeroComponent(props) {
         <Image
           src="/images/site/rizwan-image.jpg"
           alt="Image of the Blogger"
-          width={300}
-          height={300}
+          width={250}
+          height={250}
         />
       </div>
       <h2>Hi I am Rizwan Amjad!</h2>
-      <p>I blog about Web and Mobile Development etc</p>
+      <p>MERN stack | Next JS | React Native | Electron JS | Flask | Android</p>
+      <p>I write blogs about Web and Mobile Development etc</p>
     </section>
   );
 }
